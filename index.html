@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#15161A">
+<meta name="description" content="Памятка оператора колл-центра: скрипты звонков, товары и самовывоз, регионы приёма, повторка лидов, документы и правила.">
+<title>Коллеры — напоминание · Памятка оператора</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2315161A'/%3E%3Cpath d='M4 22 22 4h6L10 22z' fill='%23F5B301'/%3E%3Cpath d='M14 28 32 10v6L20 28z' fill='%23E85D04'/%3E%3C/svg%3E">
+<style>
+/* ============ ШРИФТЫ (локальные, без CDN — работает в России и офлайн) ============ */
+@font-face{font-family:'Oswald';font-style:normal;font-weight:600;font-display:swap;
+  src:url('fonts/oswald-cyrillic-600-normal.woff2') format('woff2');
+  unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:600;font-display:swap;
+  src:url('fonts/oswald-latin-600-normal.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:700;font-display:swap;
+  src:url('fonts/oswald-cyrillic-700-normal.woff2') format('woff2');
+  unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:700;font-display:swap;
+  src:url('fonts/oswald-latin-700-normal.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;
+  src:url('fonts/manrope-cyrillic-400-normal.woff2') format('woff2');
+  unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;
+  src:url('fonts/manrope-latin-400-normal.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;
+  src:url('fonts/manrope-cyrillic-500-normal.woff2') format('woff2');
+  unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;
+  src:url('fonts/manrope-latin-500-normal.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;
+  src:url('fonts/manrope-cyrillic-700-normal.woff2') format('woff2');
+  unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;
+  src:url('fonts/manrope-latin-700-normal.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;
+  src:url('fonts/manrope-cyrillic-800-normal.woff2') format('woff2');
+  unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;
+  src:url('fonts/manrope-latin-800-normal.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+/* ============ ТОКЕНЫ ============ */
+:root{
+  --concrete:#E9E8E4;      /* бетонный фон */
+  --concrete-dark:#DDDCD6;
+  --ink:#15161A;           /* почти чёрный */
+  --ink-soft:#22242A;
+  --card:#FFFFFF;
+  --line:#D8D5CD;
+  --steel:#63666E;         /* вторичный текст */
+  --signal:#E85D04;        /* сигнальный оранжевый (жилет) */
+  --signal-dark:#C24E03;
+  --hazard:#F5B301;        /* жёлтый разметки */
+  --danger:#D92D20;
+  --danger-soft:#FDECEA;
+  --ok-soft:#FFF6E5;
+  --radius:14px;
+  --mono:ui-monospace,'Cascadia Mono','Consolas','Liberation Mono',monospace;
+  --shadow:0 1px 2px rgba(21,22,26,.06),0 8px 24px -12px rgba(21,22,26,.18);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}}
+body{
+  margin:0;background:var(--concrete);color:var(--ink);
+  font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%}
+a{color:var(--signal-dark)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:2px;border-radius:4px}
+
+/* ============ HAZARD-ПОЛОСА (подпись страницы: разметка стройплощадки) ============ */
+.hazard-bar{
+  height:14px;
+  background:repeating-linear-gradient(-45deg,var(--hazard) 0 18px,var(--ink) 18px 36px);
+}
+
+/* ============ HERO ============ */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(900px 340px at 85% -60px,rgba(232,93,4,.28),transparent 70%),
+    radial-gradient(600px 300px at -10% 110%,rgba(245,179,1,.12),transparent 70%);
+}
+.hero-inner{
+  position:relative;z-index:1;max-width:1180px;margin:0 auto;
+  padding:56px 24px 48px;text-align:center;
+}
+.eyebrow{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--hazard);
+}
+.eyebrow::before{content:"";width:26px;height:12px;background:var(--signal);border-radius:2px}
+.hero h1{
+  font-family:'Oswald',Impact,sans-serif;font-weight:700;
+  font-size:clamp(44px,9vw,88px);line-height:1.02;letter-spacing:.01em;
+  text-transform:uppercase;margin:18px auto 0;max-width:14ch;
+}
+.hero h1 em{font-style:normal;color:var(--hazard)}
+.hero-sub{
+  margin:18px auto 0;max-width:56ch;color:#C9CAD0;font-size:clamp(16px,2.2vw,19px);
+}
+.stop-card{
+  margin:34px auto 0;background:#fff;color:var(--ink);
+  border-radius:var(--radius);overflow:hidden;
+  box-shadow:0 20px 50px -20px rgba(0,0,0,.6);
+  max-width:760px;
+}
+.stop-card .strip{
+  height:12px;
+  background:repeating-linear-gradient(-45deg,var(--hazard) 0 14px,var(--ink) 14px 28px);
+}
+.stop-body{padding:22px 26px 24px;text-align:center}
+.stop-tag{
+  display:inline-block;background:var(--danger);color:#fff;
+  font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  padding:5px 10px;border-radius:6px;
+}
+.stop-title{
+  font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+  font-size:clamp(24px,4.4vw,34px);line-height:1.15;margin:12px 0 6px;
+}
+.stop-note{margin:0;color:var(--steel);font-weight:500}
+
+/* ============ КАРКАС: TOC + КОНТЕНТ ============ */
+.layout{
+  max-width:1180px;margin:0 auto;padding:44px 24px 72px;
+  display:grid;grid-template-columns:250px minmax(0,1fr);gap:40px;
+  align-items:start;
+}
+.toc{position:sticky;top:24px}
+.toc-title{
+  font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--steel);margin:0 0 12px 12px;
+}
+.toc nav{display:flex;flex-direction:column;gap:2px}
+.toc a{
+  display:flex;align-items:center;gap:10px;
+  text-decoration:none;color:var(--ink);font-weight:600;font-size:15px;
+  padding:9px 12px;border-radius:10px;border:1px solid transparent;
+  transition:background .15s,border-color .15s;
+}
+.toc a::before{
+  content:"";width:8px;height:8px;border-radius:2px;background:var(--line);
+  flex:0 0 auto;transition:background .15s,transform .15s;
+}
+.toc a:hover{background:#fff;border-color:var(--line)}
+.toc a.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.toc a.active::before{background:var(--signal);transform:rotate(45deg)}
+
+/* мобильная навигация */
+.chips-nav{display:none}
+
+/* ============ СЕКЦИИ ============ */
+.content{display:flex;flex-direction:column;gap:28px;min-width:0}
+.section{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px 32px 32px;box-shadow:var(--shadow);scroll-margin-top:24px;
+}
+.section-head{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.section-mark{
+  flex:0 0 auto;width:34px;height:34px;border-radius:8px;background:var(--ink);
+  position:relative;overflow:hidden;
+}
+.section-mark::after{
+  content:"";position:absolute;left:-6px;bottom:6px;width:46px;height:8px;
+  background:repeating-linear-gradient(-45deg,var(--hazard) 0 6px,transparent 6px 12px);
+}
+.section h2{
+  font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
+  font-size:clamp(22px,3.4vw,30px);letter-spacing:.02em;line-height:1.15;margin:0;
+}
+.section-lead{margin:6px 0 20px;color:var(--steel);font-size:15.5px}
+h3.block-title{
+  font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
+  font-size:19px;letter-spacing:.03em;margin:26px 0 12px;
+}
+h3.block-title:first-child{margin-top:0}
+.sub-note{font-size:13.5px;color:var(--steel);font-weight:600;margin:-6px 0 12px}
+
+/* ============ ЧИПЫ ============ */
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
+.chips li{
+  border:1px solid var(--line);background:#F7F6F3;border-radius:999px;
+  padding:8px 16px;font-weight:600;font-size:15.5px;
+}
+.chips.neg li{background:var(--danger-soft);border-color:#F3C6C2;color:#8A1C13}
+.chips li b{color:var(--signal-dark)}
+.chips.neg li b{color:var(--danger)}
+
+/* ============ ТАБЫ ============ */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 20px}
+.tab-btn{
+  font-family:'Manrope',sans-serif;font-size:15px;font-weight:700;
+  padding:10px 20px;border-radius:999px;cursor:pointer;
+  border:1.5px solid var(--line);background:#fff;color:var(--steel);
+  transition:all .15s;
+}
+.tab-btn:hover{border-color:var(--ink);color:var(--ink)}
+.tab-btn[aria-selected="true"]{
+  background:var(--ink);border-color:var(--ink);color:#fff;
+  box-shadow:0 6px 18px -8px rgba(21,22,26,.5);
+}
+.tab-panel[hidden]{display:none}
+
+/* ============ РЕГИОНЫ ============ */
+.region-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.region-card{
+  border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px;
+  background:#FBFAF8;position:relative;overflow:hidden;
+}
+.region-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:5px;
+  background:linear-gradient(90deg,var(--signal),var(--hazard));
+}
+.region-card h4{
+  font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
+  font-size:17px;letter-spacing:.03em;margin:6px 0 10px;
+}
+.region-card ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:15.5px}
+.region-card li{margin:4px 0}
+.region-card .region-tag{
+  display:inline-block;font-size:11px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--signal-dark);margin-bottom:2px;
+}
+
+/* ============ СКРИПТЫ ============ */
+.script-box{
+  background:var(--ink);color:#EDEEF0;border-radius:12px;
+  padding:24px 26px;position:relative;
+}
+.script-box::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:6px;
+  background:repeating-linear-gradient(-45deg,var(--hazard) 0 12px,var(--ink) 12px 24px);
+}
+.script-box p{
+  margin:0;font-size:clamp(17px,2.4vw,20px);line-height:1.65;font-weight:500;
+}
+.script-box p + p{margin-top:14px;color:#A8AAB2;font-size:15.5px}
+.script-box .cue{color:var(--hazard);font-weight:700}
+.copy-btn{
+  margin-top:16px;display:inline-flex;align-items:center;gap:8px;
+  font-family:'Manrope',sans-serif;font-size:14.5px;font-weight:800;
+  letter-spacing:.04em;text-transform:uppercase;
+  background:var(--signal);color:#fff;border:0;border-radius:9px;
+  padding:11px 20px;cursor:pointer;transition:background .15s,transform .1s;
+}
+.copy-btn:hover{background:var(--signal-dark)}
+.copy-btn:active{transform:translateY(1px)}
+.copy-btn.done{background:#1F7A3D}
+
+/* ============ ПОВТОРКА ============ */
+.case-card{
+  border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  background:#FBFAF8;margin-bottom:16px;
+}
+.case-card:last-child{margin-bottom:0}
+.case-lead{
+  background:var(--ink);color:#fff;padding:14px 20px;
+  font-weight:700;font-size:15.5px;display:flex;gap:12px;align-items:flex-start;
+}
+.case-lead .case-kicker{
+  flex:0 0 auto;font-family:var(--mono);font-size:11.5px;font-weight:700;
+  letter-spacing:.1em;color:var(--hazard);padding-top:3px;
+}
+.case-body{padding:16px 20px 18px;display:flex;flex-direction:column;gap:12px}
+.variant{display:flex;gap:12px;align-items:flex-start;font-size:15.5px}
+.variant .v-letter{
+  flex:0 0 auto;width:26px;height:26px;border-radius:7px;
+  background:var(--ok-soft);border:1.5px solid var(--hazard);
+  display:grid;place-items:center;font-weight:800;font-size:14px;
+  color:var(--signal-dark);
+}
+.variant p{margin:2px 0 0}
+.variant p strong{color:var(--signal-dark)}
+
+/* ============ ШАГИ ============ */
+.steps{counter-reset:step;list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.steps li{
+  counter-increment:step;position:relative;padding-left:56px;
+  font-size:16px;background:#FBFAF8;border:1px solid var(--line);
+  border-radius:12px;padding-top:14px;padding-bottom:14px;padding-right:16px;
+}
+.steps li::before{
+  content:counter(step);position:absolute;left:14px;top:50%;
+  transform:translateY(-50%);width:30px;height:30px;border-radius:8px;
+  background:var(--ink);color:var(--hazard);display:grid;place-items:center;
+  font-family:'Oswald',sans-serif;font-weight:700;font-size:16px;
+}
+
+/* ============ КОНТАКТЫ ============ */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.contact-card{
+  border:1.5px solid var(--line);border-radius:12px;padding:18px 20px;
+  background:#fff;text-align:left;
+}
+.contact-card .label{
+  font-size:11.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--steel);display:block;margin-bottom:6px;
+}
+.contact-card a{
+  font-family:'Oswald',sans-serif;font-weight:600;font-size:26px;
+  color:var(--ink);text-decoration:none;letter-spacing:.02em;
+}
+.contact-card a:hover{color:var(--signal-dark)}
+.contact-card .hint{display:block;margin-top:6px;font-size:13.5px;color:var(--steel)}
+.code-card{
+  background:var(--ink);color:#fff;border:none;
+}
+.code-card .label{color:var(--hazard)}
+.code-card .code{
+  font-family:'Oswald',sans-serif;font-weight:700;font-size:44px;
+  color:var(--hazard);line-height:1;
+}
+.code-card .hint{color:#A8AAB2}
+
+/* ============ ТАБЛИЦА КОМПАНИЙ ============ */
+.pair-table{width:100%;border-collapse:collapse;font-size:15.5px}
+.pair-table th{
+  text-align:left;font-size:11.5px;font-weight:800;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--steel);
+  padding:8px 14px;border-bottom:2px solid var(--ink);
+}
+.pair-table td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.pair-table tr:nth-child(even) td{background:#FBFAF8}
+.pair-table td:first-child{font-weight:700}
+.pair-table td:last-child{color:var(--ink-soft)}
+
+/* ============ ПРАВИЛА ============ */
+.rule-card{
+  border-radius:12px;padding:18px 20px;margin-bottom:14px;
+  border:1.5px solid var(--line);background:#FBFAF8;
+}
+.rule-card:last-child{margin-bottom:0}
+.rule-card.stop{background:var(--danger-soft);border-color:#F0BDB8}
+.rule-card.warn{background:var(--ok-soft);border-color:#F0D9A8}
+.rule-card .rule-title{
+  font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
+  font-size:17.5px;letter-spacing:.02em;margin:0 0 8px;display:flex;gap:10px;align-items:center;
+}
+.rule-card.stop .rule-title::before{
+  content:"";width:14px;height:14px;border-radius:3px;background:var(--danger);flex:0 0 auto;
+}
+.rule-card.warn .rule-title::before{
+  content:"";width:14px;height:14px;border-radius:3px;background:var(--hazard);flex:0 0 auto;
+}
+.rule-card p{margin:6px 0;font-size:15.5px}
+.rule-card ul{margin:8px 0 0;padding-left:20px;font-size:15.5px}
+.rule-card li{margin:5px 0}
+.src-list{
+  font-family:var(--mono);font-size:13.5px;line-height:1.7;
+  background:#fff;border:1px dashed var(--line);border-radius:10px;
+  padding:14px 16px;margin-top:12px;overflow-wrap:anywhere;
+}
+.src-list li{margin:6px 0}
+mark{background:var(--hazard);color:var(--ink);padding:1px 5px;border-radius:4px;font-weight:700}
+
+/* ============ ФУТЕР ============ */
+footer{
+  background:var(--ink);color:#8E9098;font-size:14px;
+  padding:0 0 40px;
+}
+footer .hazard-bar{margin-bottom:34px}
+footer .foot-inner{max-width:1180px;margin:0 auto;padding:0 24px}
+footer strong{color:#C9CAD0}
+
+/* ============ КНОПКА «ВВЕРХ» ============ */
+.to-top{
+  position:fixed;right:20px;bottom:20px;z-index:50;
+  width:48px;height:48px;border-radius:14px;border:0;cursor:pointer;
+  background:var(--ink);color:var(--hazard);font-size:20px;line-height:1;
+  box-shadow:0 10px 26px -8px rgba(21,22,26,.55);
+  opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .2s,transform .2s,visibility .2s;
+}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--signal);color:#fff}
+
+.skip-link{
+  position:absolute;left:-9999px;top:8px;z-index:100;
+  background:var(--ink);color:#fff;padding:10px 18px;border-radius:8px;
+  font-weight:700;text-decoration:none;
+}
+.skip-link:focus{left:8px}
+
+/* ============ АДАПТИВ ============ */
+@media (max-width:960px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:0;padding-top:0}
+  .toc{display:none}
+  .content{min-width:0;max-width:100%}
+  .chips-nav{
+    display:block;position:sticky;top:0;z-index:40;
+    background:rgba(233,232,228,.94);backdrop-filter:blur(8px);
+    margin:0 -24px 28px;border-bottom:1px solid var(--line);
+    min-width:0;max-width:100vw;overflow:hidden;
+  }
+  .chips-nav .chips-scroll{
+    display:flex;gap:8px;overflow-x:auto;padding:12px 24px;
+    scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  }
+  .chips-nav .chips-scroll::-webkit-scrollbar{display:none}
+  .chips-nav a{
+    flex:0 0 auto;text-decoration:none;color:var(--ink);
+    font-size:14px;font-weight:700;white-space:nowrap;
+    background:#fff;border:1px solid var(--line);border-radius:999px;
+    padding:8px 15px;
+  }
+  .chips-nav a.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .section{padding:24px 20px 26px;border-radius:12px}
+  .hero-inner{padding:44px 20px 40px}
+}
+@media (max-width:560px){
+  body{font-size:16.5px}
+  .contact-card a{font-size:23px}
+  .script-box{padding:20px 18px}
+  .case-lead{flex-direction:column;gap:6px}
+  .pair-table,.pair-table tbody,.pair-table tr,.pair-table td{display:block;width:100%}
+  .pair-table thead{display:none}
+  .pair-table tr{border:1px solid var(--line);border-radius:10px;margin-bottom:10px;padding:6px 0;background:#fff}
+  .pair-table td{border:0;padding:6px 14px}
+  .pair-table td:first-child{padding-top:10px}
+  .pair-table td:last-child{padding-bottom:10px}
+  .pair-table td:not(:first-child)::before{
+    content:attr(data-l);display:block;font-size:11px;font-weight:800;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--steel);margin-bottom:2px;
+  }
+}
+
+/* служебный iframe Netlify (бейдж в углу) — скрываем, сайту не мешает */
+#nl-badge-frame,.netlify-badge,.netlify-badge-frame{display:none!important}
+
+/* ============ ОБЪЁМЫ ============ */
+.vol-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0 10px}
+.vol-search{
+  flex:1 1 260px;min-width:220px;max-width:420px;
+  padding:10px 14px;border:1.5px solid var(--line);border-radius:10px;
+  font:inherit;font-size:14px;background:#fff;color:var(--ink);
+}
+.vol-search:focus{outline:0;border-color:var(--signal);box-shadow:0 0 0 3px rgba(232,93,4,.15)}
+.vol-regions{display:flex;flex-wrap:wrap;gap:8px}
+.vol-chip{
+  padding:8px 14px;border:1.5px solid var(--line);border-radius:999px;background:#fff;
+  font-family:inherit;font-size:13px;font-weight:800;color:var(--ink);cursor:pointer;
+}
+.vol-chip:hover{border-color:var(--signal)}
+.vol-chip.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.vol-meta{font-size:13px;color:var(--steel);margin:4px 0 16px;font-weight:600}
+.vol-meta.is-err{color:#B3261E}
+.vol-retry{margin-left:8px;font:inherit;font-size:13px;font-weight:700;padding:5px 14px;border-radius:999px;border:1px solid currentColor;background:transparent;color:inherit;cursor:pointer}
+.vol-retry:hover{opacity:.75}
+.vol-retry:disabled{opacity:.5;cursor:default}
+.vol-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;align-items:start}
+.vol-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;min-width:0}
+.vol-card h3{font-size:16px;font-weight:800;color:var(--ink);margin:0 0 10px}
+.vol-sec{margin-top:10px;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.vol-sec:first-of-type{margin-top:0}
+.vol-sec-h{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  font-size:11.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--steel);background:#EFEFE8;padding:6px 10px;border-bottom:1px solid var(--line);
+}
+.vol-add-btn{
+  flex:0 0 auto;border:1px solid rgba(0,0,0,.1);border-radius:6px;background:#fff;
+  color:var(--steel);font-family:inherit;font-size:11px;line-height:1;font-weight:800;
+  padding:3px 7px;cursor:pointer;
+}
+.vol-add-btn:hover{color:var(--signal);border-color:var(--signal)}
+.vol-line{
+  display:flex;gap:8px;align-items:center;
+  padding:7px 10px;background:#F7F7F4;border-bottom:1px solid var(--line);
+  position:relative;
+}
+.vol-line:last-child{border-bottom:0}
+.vol-line.is-stop{background:#FDECEC}
+.vol-line.is-add{background:#F0F7F0}
+.vol-line.vol-empty{background:#FCFCFA}
+.vol-stop-label{
+  color:var(--danger);font-weight:800;letter-spacing:.02em;
+}
+.vol-vol-txt{color:var(--steel);font-weight:600}
+.vol-stop-preview{
+  margin-top:6px;font-size:12.5px;font-weight:800;color:var(--danger);
+}
+.vol-stoptoggle{
+  font-family:inherit;font-size:12px;font-weight:800;padding:6px 11px;border-radius:7px;cursor:pointer;
+  border:1.5px solid var(--line);background:#fff;color:var(--steel);
+}
+.vol-stoptoggle:hover{border-color:var(--danger);color:var(--danger)}
+.vol-stoptoggle.active{border-color:var(--danger);background:var(--danger);color:#fff}
+.vol-line.stop-on .vol-input{opacity:.45}
+.vol-line.vol-empty .vol-add-big{
+  flex:1 1 auto;opacity:1;width:100%;text-align:left;
+  background:transparent;border:1px dashed var(--line);border-radius:7px;
+  color:var(--steel);font-size:12.5px;font-weight:700;padding:9px 10px;
+}
+.vol-line.vol-empty .vol-add-big:hover{color:var(--signal);border-color:var(--signal)}
+.vol-vol{font-size:13.5px;line-height:1.45;color:var(--ink);min-width:0;overflow-wrap:anywhere;flex:1 1 auto}
+.vol-badge{
+  flex:0 0 auto;font-size:10.5px;font-weight:800;letter-spacing:.1em;
+  color:#fff;background:var(--danger);border-radius:5px;padding:2.5px 7px;
+}
+.vol-edit-btn{
+  flex:0 0 auto;opacity:0;transition:opacity .15s;
+  border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--steel);
+  font-size:12px;line-height:1;padding:4px 7px;cursor:pointer;
+}
+.vol-line:hover .vol-edit-btn,.vol-edit-btn:focus-visible{opacity:1}
+.vol-edit-btn:hover{color:var(--ink);border-color:var(--signal)}
+.vol-del-btn{
+  flex:0 0 auto;opacity:0;transition:opacity .15s;
+  border:1px solid #F1C1C1;border-radius:6px;background:#fff;color:var(--danger);
+  font-size:12px;line-height:1;padding:4px 7px;cursor:pointer;
+}
+.vol-line:hover .vol-del-btn,.vol-del-btn:focus-visible,.vol-line.is-add .vol-del-btn{opacity:1}
+.vol-del-btn:hover{background:#FDECEC;border-color:var(--danger)}
+.vol-input{
+  display:block;width:100%;min-width:0;box-sizing:border-box;
+  padding:8px 10px;border:1.5px solid var(--signal);border-radius:7px;
+  font:inherit;font-size:13.5px;line-height:1.45;background:#fff;color:var(--ink);
+  resize:vertical;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;
+}
+.vol-input:focus{outline:0;box-shadow:0 0 0 3px rgba(232,93,4,.15)}
+/* iOS: поле ввода меньше 16px — Safari при фокусе прыгает зумом, и правка «уезжает» из-под пальца.
+   На сенсорных экранах держим 16px — зум не срабатывает. */
+@media (pointer: coarse){
+  .vol-input, .vol-search{font-size:16px}
+}
+.vol-line.is-editing{display:block;cursor:default}
+.vol-editbar{display:flex;gap:8px;margin-top:8px}
+.vol-save,.vol-cancel{
+  font-family:inherit;font-size:12.5px;font-weight:800;padding:6px 12px;border-radius:7px;cursor:pointer;
+}
+.vol-save{border:0;background:var(--signal);color:#fff}
+.vol-save:hover{filter:brightness(1.08)}
+.vol-save:disabled{opacity:.55;cursor:default}
+.vol-cancel{border:1px solid var(--line);background:#fff;color:var(--steel)}
+.vol-cancel:hover{color:var(--ink);border-color:var(--steel)}
+.vol-toast{
+  position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(12px);
+  max-width:min(92vw,460px);padding:11px 16px;border-radius:10px;
+  background:var(--ink);color:#fff;font-size:13.5px;font-weight:700;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;transition:opacity .25s,transform .25s;
+  z-index:60;pointer-events:none;
+}
+.vol-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.vol-toast.err{background:#B42318}
+@media (max-width:760px){
+  .vol-grid{grid-template-columns:1fr}
+  .vol-tools{flex-direction:column;align-items:stretch}
+  .vol-search{max-width:none}
+  .vol-edit-btn{opacity:.6}  /* на тач-устройствах нет hover — кнопка всегда чуть видна */
+  .vol-del-btn{opacity:.6}
+  .vol-line.is-add .vol-del-btn{opacity:1}
+}
+@media (hover:none){
+  .vol-line .vol-edit-btn{opacity:.6}
+  .vol-line:hover .vol-edit-btn{opacity:1}
+}
+.vol-empty{margin-top:18px;font-weight:700;color:var(--steel)}
+</style>
+<meta name="robots" content="noindex,nofollow,noarchive">
+</head>
+<body>
+<a class="skip-link" href="#content">К содержанию</a>
+<div class="hazard-bar" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Колл-центр · внутренняя памятка</div>
+    <h1>Коллеры — <em>напоминание</em></h1>
+    <p class="hero-sub">Скрипты звонков, товары и самовывоз, регионы приёма, повторка лидов, документы и правила — всё, что нужно оператору под рукой.</p>
+
+    <div class="stop-card" role="note" aria-label="Главное правило">
+      <div class="strip" aria-hidden="true"></div>
+      <div class="stop-body">
+        <span class="stop-tag">Главное правило</span>
+        <p class="stop-title">Оператор не даёт консультаций!</p>
+        <p class="stop-note">Только приём информации от клиента.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="toc" aria-label="Содержание">
+    <p class="toc-title">Разделы</p>
+    <nav id="tocNav">
+      <a href="#goods">Основные товары</a>
+      <a href="#regions">Что принимаем регионы</a>
+      <a href="#volumes">Что принимаем объёмы</a>
+      <a href="#scripts">Скрипт приветствия</a>
+      <a href="#repeat">Повторный лид</a>
+      <a href="#docs">Документы и бухгалтерия</a>
+      <a href="#phones">Номера и код</a>
+      <a href="#pairs">Компания и материал</a>
+      <a href="#rules">Правила</a>
+    </nav>
+  </aside>
+
+  <div class="chips-nav" aria-hidden="true">
+    <div class="chips-scroll" id="chipsNav">
+      <a href="#goods">Товары</a>
+      <a href="#regions">Регионы</a>
+      <a href="#volumes">Объёмы</a>
+      <a href="#scripts">Скрипт</a>
+      <a href="#repeat">Повторный лид</a>
+      <a href="#docs">Документы</a>
+      <a href="#phones">Номера</a>
+      <a href="#pairs">Компании</a>
+      <a href="#rules">Правила</a>
+    </div>
+  </div>
+
+  <main class="content" id="content">
+
+    <!-- ================= ОСНОВНЫЕ ТОВАРЫ ================= -->
+    <section class="section" id="goods">
+      <div class="section-head">
+        <span class="section-mark" aria-hidden="true"></span>
+        <h2>Основные товары</h2>
+      </div>
+      <p class="section-lead">Что есть в компании и что нельзя отдавать на самовывоз.</p>
+
+      <h3 class="block-title">На самовывоз НЕ отдаём <span style="color:var(--danger)">(кроме товаров в мешках)</span></h3>
+      <ul class="chips neg">
+        <li>Бетон</li>
+        <li>Песок / ПГС</li>
+        <li>Щебень / ЩПС</li>
+        <li>Керамзит навалом <b>(не в мешках, не в биг-бэгах)</b></li>
+        <li>Асфальт</li>
+        <li>ЦПС / цементно-песочная смесь навалом</li>
+        <li>Земля / грунт</li>
+        <li>Навоз</li>
+        <li>Дрова и уголь навалом</li>
+      </ul>
+
+      <h3 class="block-title">Вторичные материалы</h3>
+      <ul class="chips">
+        <li>Бой асфальта</li>
+        <li>Бой бетона</li>
+        <li>Бой кирпича</li>
+        <li>Вторичный щебень</li>
+      </ul>
+
+      <h3 class="block-title">Аренда техники</h3>
+      <ul class="chips">
+        <li>Экскаватор</li>
+        <li>МТЗ с щёткой и отвалом</li>
+        <li>Кран</li>
+        <li>Автовышка</li>
+        <li>Самосвал</li>
+      </ul>
+    </section>
+
+    <!-- ================= РЕГИОНЫ ================= -->
+    <section class="section" id="regions">
+      <div class="section-head">
+        <span class="section-mark" aria-hidden="true"></span>
+        <h2>Что принимаем? Регионы</h2>
+      </div>
+      <p class="section-lead">Куда принимаем заявки — по типу товара.</p>
+
+      <div class="tabs" role="tablist" aria-label="Тип товара">
+        <button class="tab-btn" role="tab" id="tab-basic" aria-controls="panel-basic" aria-selected="true">Основные товары</button>
+        <button class="tab-btn" role="tab" id="tab-jbi" aria-controls="panel-jbi" aria-selected="false">ЖБИ</button>
+      </div>
+
+      <div class="tab-panel" id="panel-basic" role="tabpanel" aria-labelledby="tab-basic">
+        <h3 class="block-title">Регион СПБ</h3>
+        <p class="sub-note">Нулевой цикл (основные товары)</p>
+        <div class="region-grid">
+          <div class="region-card"><span class="region-tag">Нулевой цикл</span><h4>Санкт-Петербург и Ленинградская область</h4></div>
+          <div class="region-card"><span class="region-tag">Нулевой цикл</span><h4>Петрозаводск и Республика Карелия</h4></div>
+          <div class="region-card"><span class="region-tag">Нулевой цикл</span><h4>Псков и Псковская область</h4></div>
+          <div class="region-card"><span class="region-tag">Нулевой цикл</span><h4>Великий Новгород и Новгородская область</h4></div>
+        </div>
+        <p class="sub-note" style="margin-top:20px">Общестроительные материалы</p>
+        <div class="region-grid">
+          <div class="region-card"><span class="region-tag">Общестрой</span><h4>Санкт-Петербург и Ленинградская область</h4></div>
+          <div class="region-card"><span class="region-tag">Общестрой</span><h4>Петрозаводск и Республика Карелия</h4></div>
+          <div class="region-card"><span class="region-tag">Общестрой</span><h4>Псков и Псковская область</h4></div>
+          <div class="region-card"><span class="region-tag">Общестрой</span><h4>Великий Новгород и Новгородская область</h4></div>
+          <div class="region-card"><span class="region-tag">Общестрой</span><h4>Мурманск и Мурманская область</h4></div>
+        </div>
+
+        <h3 class="block-title">Регион МСК</h3>
+        <div class="region-grid">
+          <div class="region-card"><h4>Москва и Московская область</h4></div>
+          <div class="region-card"><h4>Тверская область</h4></div>
+          <div class="region-card"><h4>Ярославская область</h4></div>
+          <div class="region-card"><h4>Ивановская область</h4></div>
+          <div class="region-card"><h4>Владимирская область</h4></div>
+          <div class="region-card"><h4>Рязанская область</h4></div>
+          <div class="region-card"><h4>Липецкая область</h4></div>
+          <div class="region-card"><h4>Орловская область</h4></div>
+          <div class="region-card"><h4>Тульская область</h4></div>
+          <div class="region-card"><h4>Калужская область</h4></div>
+          <div class="region-card"><h4>Смоленская область</h4></div>
+        </div>
+
+        <h3 class="block-title">Регион КРД</h3>
+        <div class="region-grid">
+          <div class="region-card"><h4>Краснодар и Краснодарский край</h4></div>
+          <div class="region-card"><h4>Ставрополь и Ставропольский край</h4></div>
+          <div class="region-card"><h4>Симферополь, Севастополь и Республика Крым</h4></div>
+          <div class="region-card"><h4>Все территории Новороссии — Мариуполь, Донецк, Луганск</h4></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-jbi" role="tabpanel" aria-labelledby="tab-jbi" hidden>
+        <h3 class="block-title">Регион СПБ</h3>
+        <div class="region-grid">
+          <div class="region-card"><h4>Санкт-Петербург и Ленинградская область</h4></div>
+          <div class="region-card"><h4>Петрозаводск и Республика Карелия</h4></div>
+          <div class="region-card"><h4>Псков и Псковская область</h4></div>
+          <div class="region-card"><h4>Великий Новгород и Новгородская область</h4></div>
+        </div>
+
+        <h3 class="block-title">Регион Волгоград</h3>
+        <div class="region-grid"><div class="region-card"><h4>Волгоград и Волгоградская область</h4></div></div>
+
+        <h3 class="block-title">Регион Воронеж</h3>
+        <div class="region-grid"><div class="region-card"><h4>Воронеж и Воронежская область</h4></div></div>
+
+        <h3 class="block-title">Регион Нижний Новгород</h3>
+        <div class="region-grid"><div class="region-card"><h4>Нижний Новгород и Нижегородская область</h4></div></div>
+
+        <h3 class="block-title">Регион Ростов-на-Дону</h3>
+        <div class="region-grid"><div class="region-card"><h4>Ростов-на-Дону и Ростовская область</h4></div></div>
+
+        <h3 class="block-title">Регион МСК</h3>
+        <div class="region-grid">
+          <div class="region-card"><h4>Москва и Московская область</h4></div>
+          <div class="region-card"><h4>Тверская область</h4></div>
+          <div class="region-card"><h4>Ярославская область</h4></div>
+          <div class="region-card"><h4>Ивановская область</h4></div>
+          <div class="region-card"><h4>Владимирская область</h4></div>
+          <div class="region-card"><h4>Рязанская область</h4></div>
+          <div class="region-card"><h4>Липецкая область</h4></div>
+          <div class="region-card"><h4>Орловская область</h4></div>
+          <div class="region-card"><h4>Тульская область</h4></div>
+          <div class="region-card"><h4>Калужская область</h4></div>
+          <div class="region-card"><h4>Смоленская область</h4></div>
+        </div>
+
+        <h3 class="block-title">Регион КРД</h3>
+        <div class="region-grid">
+          <div class="region-card"><h4>Краснодар и Краснодарский край</h4></div>
+          <div class="region-card"><h4>Ставрополь и Ставропольский край</h4></div>
+          <div class="region-card"><h4>Симферополь, Севастополь и Республика Крым</h4></div>
+          <div class="region-card"><h4>Все территории Новороссии — Мариуполь, Донецк, Луганск</h4></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ОБЪЁМЫ ================= -->
+    <section class="section" id="volumes">
+      <div class="section-head">
+        <span class="section-mark" aria-hidden="true"></span>
+        <h2>Что принимаем объёмы</h2>
+      </div>
+      <p class="section-lead">Какой материал, в каком объёме и в каком городе принимаем сейчас. Данные — из рабочей таблицы распределения, обновляются автоматически.</p>
+
+      <div class="vol-tools">
+        <input id="volSearch" class="vol-search" type="search" placeholder="Поиск материала: брус, щебень, минвата…" autocomplete="off" aria-label="Поиск материала">
+        <div class="vol-regions" id="volRegions" role="group" aria-label="Фильтр по региону"></div>
+      </div>
+      <p class="vol-meta" id="volMeta">Загружаем объёмы…</p>
+
+      <div class="vol-grid" id="volGrid"></div>
+      <p class="vol-empty" id="volEmpty" hidden>Ничего не найдено — измените поиск или регион.</p>
+    </section>
+
+    <!-- ================= СКРИПТЫ ================= -->
+    <section class="section" id="scripts">
+      <div class="section-head">
+        <span class="section-mark" aria-hidden="true"></span>
+        <h2>Скрипт приветствия</h2>
+      </div>
+      <p class="section-lead">Скажи дословно, дальше работаем по регламенту.</p>
+
+      <div class="tabs" role="tablist" aria-label="Тип звонка">
+        <button class="tab-btn" role="tab" id="tab-in" aria-controls="panel-in" aria-selected="true">Входящий звонок</button>
+        <button class="tab-btn" role="tab" id="tab-out" aria-controls="panel-out" aria-selected="false">Исходящий звонок</button>
+      </div>
+
+      <div class="tab-panel" id="panel-in" role="tabpanel" aria-labelledby="tab-in">
+        <div class="script-box">
+          <p id="scriptIn">«Здравствуйте, вы попали в Колл-центр компании "название компании". Меня зовут "имя", я задам вам несколько вопросов для оформления заявки, далее с вами свяжется специалист и проконсультирует. Какой материал вас интересует?…»</p>
+          <p>&lt;далее задаём клиенту все привычные вопросы и работаем по регламенту&gt;</p>
+          <button class="copy-btn" type="button" data-copy="scriptIn">Скопировать</button>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-out" role="tabpanel" aria-labelledby="tab-out" hidden>
+        <div class="script-box">
+          <p id="scriptOut">«Здравствуйте, вы обращались в Колл-центр компании "название компании". Меня зовут "имя", я задам вам несколько вопросов для оформления заявки, далее с вами свяжется специалист и ответит на все ваши вопросы. Какой материал вас интересует?…»</p>
+          <p>&lt;далее задаём клиенту все привычные вопросы и работаем по регламенту&gt;</p>
+          <button class="copy-btn" type="button" data-copy="scriptOut">Скопировать</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ПОВТОРКА ================= -->
+    <section class="section" id="repeat">
+      <div class="section-head">
+        <span class="section-mark" aria-hidden="true"></span>
+        <h2>Повторка</h2>
+      </div>
+      <p class="section-lead">Пришёл повторный лид: смотрим, что в названии, и выбираем ветку.</p>
+
+      <div class="case-card">
+        <div class="case-lead"><span class="case-kicker">ЛИД</span><span>«СУЩЕСТВУЮЩИЙ КЛИЕНТ, узнай причину звонка и какой товар нужен»</span></div>
+        <div class="case-body">
+          <div class="variant"><span class="v-letter">а</span><p><strong>Обращаются по тому же товару:</strong> просим связаться со своим менеджером; если забыли, даём имя и номер телефона ответственного менеджера. Если проблемы, говорим, что срочно решим, и передаём заявку руководству с именем менеджера и номером клиента.</p></div>
+          <div class="variant"><span class="v-letter">б</span><p><strong>Обращаются по другому материалу:</strong> обрабатываем лид как обычно, по регламенту.</p></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-lead"><span class="case-kicker">ЛИД</span><span>«ПОВТОР заявки «Категория товара» — проверь, откуда пришёл»</span></div>
+        <div class="case-body">
+          <div class="variant"><span class="v-letter">а</span><p><strong>Тот же товар, источник (сайт) один, но группы источников разные</strong> (звонок / заявка с онлайн-чата / заявка с сайта) → спрашиваем, общался ли с ним менеджер, потому что видим: клиент уже обращался к нам.</p></div>
+          <div class="variant"><span class="v-letter">б</span><p><strong>Другой товар →</strong> обрабатываем лид как обычно, по регламенту.</p></div>
+          <div class="variant"><span class="v-letter">в</span><p><strong>Тот же товар, но источник (сайт) другой →</strong> советуем предыдущую компанию.</p></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-lead"><span class="case-kicker">ЛИД</span><span>«ПОВТОРНАЯ ЗАЯВКА — проверь, откуда пришёл»</span></div>
+        <div class="case-body">
+          <div class="variant"><span class="v-letter">а</span><p><strong>Источник (сайт) один, но группы источников разные</strong> (звонок / заявка с онлайн-чата / заявка с сайта) → интересуемся, общались ли с клиентом уже, потому что видим: к нам он уже обращался.</p></div>
+          <div class="variant"><span class="v-letter">б</span><p><strong>Источник (сайт) другой →</strong> отказываем клиенту в материале по регламенту и советуем предыдущую компанию, которая указана в графе «предыдущий источник».</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ДОКУМЕНТЫ ================= -->
+    <section class="section" id="docs">
+      <div class="section-head">
+        <span class="section-mark" aria-hidden="true"></span>
+        <h2>Документация и бухгалтерия</h2>
+      </div>
+      <p class="section-lead">Если обращаются по закрывающим документам, отражению декларации и прочее:</p>
+
+      <ol class="steps">
+        <li>Запрашиваем сотовый номер телефона, имя, ИНН, счёт — и <strong>дублируем информацию в рабочий чат</strong>.</li>
+        <li>Клиентам говорим, чтобы писали нам на почту: <a href="mailto:v-ark@mail.ru"><strong>v-ark@mail.ru</strong></a></li>
+        <li>Если клиент говорит, что делает запрос не в первый раз, но с ним не связываются, можем дать номер бухгалтерии <strong>(ТОЛЬКО по вопросам закрывающих документов)</strong>: <a href="tel:+79291579277"><strong>8 (929) 157-92-77</strong></a></li>
+      </ol>
+    </section>
+
+    <!-- ================= НОМЕРА ================= -->
+    <section class="section" id="phones">
+      <div class="section-head">
+        <span class="section-mark" aria-hidden="true"></span>
+        <h2>Номера и код</h2>
+      </div>
+      <p class="section-lead">Торгово-строительная компания.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card"><span class="label">Телефон 1</span><a href="tel:+78122091968">(812) 209-19-68</a></div>
+        <div class="contact-card"><span class="label">Телефон 2</span><a href="tel:+78122095292">(812) 209-52-92</a></div>
+        <div class="contact-card"><span class="label">Телефон 3</span><a href="tel:+78123364387">(812) 336-43-87</a></div>
+        <div class="contact-card code-card"><span class="label">Код для заявок с сайта</span><span class="code">4839</span><span class="hint">В заявках с сайта можно использовать код 4839</span></div>
+      </div>
+    </section>
+
+    <!-- ================= КОМПАНИЯ / МАТЕРИАЛ ================= -->
+    <section class="section" id="pairs">
+      <div class="section-head">
+        <span class="section-mark" aria-hidden="true"></span>
+        <h2>Компания и материал</h2>
+      </div>
+      <p class="section-lead">Какая компания какой материал поставляет.</p>
+
+      <table class="pair-table">
+        <thead><tr><th>Компания</th><th>Материал</th></tr></thead>
+        <tbody>
+          <tr><td>Кровельная компания № 1</td><td data-l="Материал">Кровля</td></tr>
+          <tr><td>Термодом</td><td data-l="Материал">Утеплитель Роквул</td></tr>
+          <tr><td>Технология</td><td data-l="Материал">Утеплитель ТехноНИКОЛЬ</td></tr>
+          <tr><td>Темплет</td><td data-l="Материал">Утеплитель Изовер</td></tr>
+          <tr><td>Теплоторг</td><td data-l="Материал">Утеплитель Урса</td></tr>
+          <tr><td>Максимум Теплоизоляции</td><td data-l="Материал">Утеплитель Парок / Юматекс</td></tr>
+          <tr><td>Технолайн</td><td data-l="Материал">Утеплитель Пеноплэкс</td></tr>
+          <tr><td>Техресурс</td><td data-l="Материал">Утеплитель Кнауф</td></tr>
+          <tr><td>Строй Комплект</td><td data-l="Материал">Плитные материалы (ОСБ / ДСП / ЦСП / гипсокартон)</td></tr>
+          <tr><td>ЛесМатериалов</td><td data-l="Материал">Деревянный фасад</td></tr>
+          <tr><td>КирпичПро</td><td data-l="Материал">Кирпич</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ================= ПРАВИЛА ================= -->
+    <section class="section" id="rules">
+      <div class="section-head">
+        <span class="section-mark" aria-hidden="true"></span>
+        <h2>Правила</h2>
+      </div>
+      <p class="section-lead">То, на что нельзя наступать ни при каких условиях.</p>
+
+      <div class="rule-card stop">
+        <h3 class="rule-title">Все товары Б/У — СТОП!</h3>
+        <p>Б/У товары не берём и не оформляем.</p>
+      </div>
+
+      <div class="rule-card warn">
+        <h3 class="rule-title">Белорусский газобетон</h3>
+        <p>Заявки с сайтов по белорусскому газобетону: выбираем категорию <mark>«АВИТО АТЛАНТ ГАЗОБЕТОН»</mark>.</p>
+        <p style="font-weight:700;margin-bottom:4px">Источники:</p>
+        <ul class="src-list">
+          <li>Газобетонные заводы — Заявка с сайта — Могилёвский газобетон (красный телефон)</li>
+          <li>Газобетонные заводы — Почта — Могилёвский газобетон (красный телефон)</li>
+          <li>https://belorusskij-gazobeton.ru/ — Заявка с сайта — БелСнабСтрой</li>
+          <li>https://belorusskij-gazobeton.ru/ — Почта — БелСнабСтрой</li>
+          <li>https://belorusskij-gazobeton.ru/ — Заявка с онлайн-чата — БелСнабСтрой</li>
+          <li>https://belorusskij-gazobeton.ru/ — 9312125119 — БелСнабСтрой — (красный телефон)</li>
+          <li>https://belorusskij-gazobeton.ru/ — Заявка с сайта — БелСнабСтрой — RT — (красный телефон)</li>
+          <li>https://belorusskij-gazobeton.ru/ — Почта — БелСнабСтрой — RT — (красный телефон)</li>
+        </ul>
+        <p style="margin-top:12px">Если в источнике есть приписка <strong>«(красный телефон)»</strong> — <strong>ни в коем случае НЕ диктовать номер менеджера!</strong></p>
+        <p><strong>НЕ рекомендовать АВИТО АТЛАНТ</strong>, если такой источник указан в графе «предыдущий источник». Оформляем новую заявку!</p>
+      </div>
+
+      <div class="rule-card">
+        <h3 class="rule-title">Клиент назвал только товар</h3>
+        <p>Если клиент озвучивает только товар, который его интересует, и больше никакой информации не озвучивает: <strong>ЛИД ОФОРМЛЯЕМ</strong>, ставим самовывоз, по умолчанию частное лицо, регион Санкт-Петербург.</p>
+      </div>
+
+      <div class="rule-card">
+        <h3 class="rule-title">Юридические лица</h3>
+        <p>Обязательно уточняем сотовые номера телефонов и название компании у юридических лиц. Если клиент эти данные не даёт, указываем это в комментариях.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <div class="hazard-bar" aria-hidden="true"></div>
+  <div class="foot-inner">
+    <p style="margin:0"><strong>Коллеры — напоминание.</strong> Внутренняя памятка оператора колл-центра: приём информации, скрипты и регламенты.</p>
+  </div>
+</footer>
+
+<button class="to-top" type="button" id="toTop" aria-label="Наверх">↑</button>
+
+<script>
+/* Подстраховка для старых WebView: без find/closest скрипт умирает целиком —
+   объёмы навсегда «Загружаем…» и клики по правке ничего не делают */
+if (!Array.prototype.find){
+  Array.prototype.find = function(fn){
+    for (var i = 0; i < this.length; i++){ if (fn(this[i], i, this)) return this[i]; }
+    return undefined;
+  };
+}
+if (typeof Element !== 'undefined' && !Element.prototype.closest){
+  Element.prototype.closest = function(sel){
+    var el = this;
+    while (el && el.nodeType === 1){
+      var matchesSel = el.matches || el.msMatchesSelector || el.webkitMatchesSelector;
+      if (!matchesSel) return null;
+      if (matchesSel.call(el, sel)) return el;
+      el = el.parentElement || el.parentNode;
+    }
+    return null;
+  };
+}
+</script>
+<script>
+(function(){
+  /* ---- табы (два независимых набора) ---- */
+  document.querySelectorAll('[role="tablist"]').forEach(function(list){
+    var tabs = Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
+    function select(tab){
+      tabs.forEach(function(t){
+        var on = t === tab;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+      });
+    }
+    tabs.forEach(function(t, i){
+      t.addEventListener('click', function(){ select(t); });
+      t.addEventListener('keydown', function(e){
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        e.preventDefault();
+        var next = tabs[(i + d + tabs.length) % tabs.length];
+        next.focus(); select(next);
+      });
+    });
+    select(tabs[0]);
+  });
+
+  /* ---- копирование скриптов ---- */
+  document.querySelectorAll('.copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var el = document.getElementById(btn.dataset.copy);
+      var text = el ? el.textContent.trim() : '';
+      function done(){
+        var old = btn.textContent;
+        btn.textContent = 'Скопировано ✓';
+        btn.classList.add('done');
+        setTimeout(function(){ btn.textContent = 'Скопировать'; btn.classList.remove('done'); }, 2000);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done, function(){ fallback(text, done); });
+      } else { fallback(text, done); }
+    });
+  });
+  function fallback(text, cb){
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.setAttribute('readonly','');
+    ta.style.cssText = 'position:fixed;left:-9999px';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); cb(); } catch(e){}
+    document.body.removeChild(ta);
+  }
+
+  /* ---- scrollspy для TOC и мобильных чипов ---- */
+  var links = Array.prototype.slice.call(document.querySelectorAll('#tocNav a, #chipsNav a'));
+  var sections = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  function setActive(id){
+    links.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === '#' + id); });
+  }
+  if ('IntersectionObserver' in window && sections.length){
+    var seen = {};
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ seen[en.target.id] = en.isIntersecting ? en.intersectionRatio : 0; });
+      var best = null, bestR = 0;
+      Object.keys(seen).forEach(function(id){ if (seen[id] > bestR){ bestR = seen[id]; best = id; } });
+      if (best) setActive(best);
+    }, { rootMargin: '-15% 0px -55% 0px', threshold: [0, .25, .5, 1] });
+    sections.forEach(function(s){ io.observe(s); });
+    setActive(sections[0].id);
+  }
+
+  /* ---- кнопка «наверх» ---- */
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    toTop.classList.toggle('show', window.scrollY > 700);
+  }, { passive: true });
+  toTop.addEventListener('click', function(){
+    var smooth = true;
+    try { if (typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) smooth = false; } catch (err) {}
+    window.scrollTo({ top: 0, behavior: smooth ? 'smooth' : 'auto' });
+  });
+})();
+</script>
+
+<script>
+/* ---- ОБЪЁМЫ: данные из таблицы распределения, поиск + фильтр по региону + правки объёмов ---- */
+(function(){
+  'use strict';
+  // На основной ссылке и на зеркале Cloudflare API идёт относительным путём — как раньше.
+  // На сторонних бесплатных хостингах (вторая копия) данные и правки идут через
+  // то же зеркало Cloudflare: база объёмов общая для всех ссылок.
+  var API_BASE = '';
+  var hostName = (location.hostname || '').toLowerCase();
+  var directHost = (hostName === 'kolery-napominanie.netlify.app'
+                 || hostName === 'kolery-mirror.aleksejsum113.workers.dev'
+                 || hostName === 'localhost' || hostName === '127.0.0.1');
+  if (!directHost){
+    API_BASE = 'https://kolery-mirror.aleksejsum113.workers.dev';
+  }
+  var SRC_LIVE = API_BASE + '/.netlify/functions/volumes';
+  var SRC_FALLBACK = 'volumes.json';
+  var grid = document.getElementById('volGrid');
+  var meta = document.getElementById('volMeta');
+  var empty = document.getElementById('volEmpty');
+  var searchEl = document.getElementById('volSearch');
+  var regionsBox = document.getElementById('volRegions');
+  var state = { data: null, region: 'all', q: '', editing: false, rev: 0 };
+  var NAMES = {};
+  var cards = [];
+
+  function esc(s){
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function showToast(msg, err){
+    var t = document.createElement('div');
+    t.className = 'vol-toast' + (err ? ' err' : '');
+    t.textContent = msg;
+    document.body.appendChild(t);
+    requestAnimationFrame(function(){ t.classList.add('show'); });
+    setTimeout(function(){
+      t.classList.remove('show');
+      setTimeout(function(){ t.remove(); }, 350);
+    }, 2800);
+  }
+
+  var lastJson = null;
+  function render(data, force){
+    // пока оператор правит объём — тихо пропускаем автообновление, чтобы не съесть его правку
+    if (state.editing) return;
+    // если данные не менялись — не перерисовываем (вкладка работает быстро, без миганий)
+    try {
+      var j = JSON.stringify(data);
+      if (!force && j === lastJson) return;
+      lastJson = j;
+    } catch (err) {}
+    state.data = data;
+    grid.innerHTML = '';
+    NAMES = {};
+    var ids = [];
+    (data.regs || []).forEach(function(r){
+      NAMES[r.id] = r.name;
+      ids.push(r.id);
+    });
+
+    // кнопки регионов — полными названиями
+    var html = '<button type="button" class="vol-chip active" data-r="all">Все регионы</button>';
+    ids.forEach(function(id){
+      html += '<button type="button" class="vol-chip" data-r="' + esc(id) + '">' + esc(NAMES[id] || id) + '</button>';
+    });
+    regionsBox.innerHTML = html;
+
+    // карточки материалов: регион-заголовок, под ним объёмы этого региона
+    cards = [];
+    (data.items || []).forEach(function(it){
+      try {
+      var zones = Object.keys(it.r || {});
+      if (!zones.length) return;
+      var secs = '';
+      ids.forEach(function(rid){
+        var tiers = it.r[rid];
+        var head = '<div class="vol-sec-h"><span>' + esc(NAMES[rid] || rid) + '</span>'
+             + '<button type="button" class="vol-add-btn" data-r="' + esc(rid) + '" title="Добавить объём (товар появился)" aria-label="Добавить объём">➕</button></div>';
+        if (!tiers || !tiers.length){
+          // региона нет вообще — пунктирная строка «добавить объём с нуля»
+          secs += '<div class="vol-sec" data-rid="' + esc(rid) + '">' + head
+               + '<div class="vol-line vol-empty"><button type="button" class="vol-add-btn vol-add-big" data-r="' + esc(rid) + '">➕ Добавить объём</button></div></div>';
+          return;
+        }
+        // одна строка объёма: операторская пометка СТОП показывается сама,
+        // иначе первый (верхний) тир, с которого принимаем;
+        // добавленный объём (add) идёт первым от сервера;
+        // если все тиры СТОП — верхняя стоп-строка
+        var shown = null, shownIdx = 0;
+        for (var k = 0; k < tiers.length; k++){
+          if (tiers[k].f === 1){ shown = tiers[k]; shownIdx = k; break; }
+        }
+        if (!shown){
+          for (k = 0; k < tiers.length; k++){
+            if (!tiers[k].s){ shown = tiers[k]; shownIdx = k; break; }
+          }
+        }
+        if (!shown){ shown = tiers[0]; shownIdx = 0; }
+        var isAdd = shown.add === 1;
+        var manual = shown.f === 1;
+        var volHtml = manual
+          ? '<span class="vol-stop-label">Товар на СТОПЕ</span>' + (shown.v ? '<span class="vol-vol-txt"> ' + String(shown.v).replace(/\n/g, ' / ') + '</span>' : '')
+          : esc(String(shown.v).replace(/\n/g, ' / '));
+        var lines = '<div class="vol-line' + (shown.s ? ' is-stop' : '') + (isAdd ? ' is-add' : '') + '">'
+             + '<div class="vol-vol">' + volHtml + '</div>'
+             + (shown.s && !manual ? '<span class="vol-badge">СТОП</span>' : '')
+             + (isAdd ? '<button type="button" class="vol-del-btn" data-r="' + esc(rid) + '" data-i="add" title="Удалить добавленный объём" aria-label="Удалить добавленный объём">✕</button>' : '')
+             + '<button type="button" class="vol-edit-btn" data-r="' + esc(rid) + '" data-i="' + (isAdd ? 'add' : shownIdx) + '" title="Изменить объём" aria-label="Изменить объём">✎</button>'
+             + '</div>';
+        secs += '<div class="vol-sec" data-rid="' + esc(rid) + '">' + head + lines + '</div>';
+      });
+      if (!secs) return;
+      var el = document.createElement('article');
+      el.className = 'vol-card';
+      el.dataset.name = String(it.n).toLowerCase();
+      el.dataset.exact = String(it.n);
+      el.dataset.zones = zones.join(',');
+      el.innerHTML = '<h3>' + esc(it.n) + '</h3>' + secs;
+      grid.appendChild(el);
+      cards.push(el);
+      } catch (e) { /* один битый материал не должен скрывать все объёмы */ }
+    });
+
+    var when = '';
+    if (data.regs && data.regs[0] && data.regs[0].updated){
+      when = data.regs[0].updated.replace(/:\d\d$/, '');
+    } else if (data.gen){
+      var d = new Date(data.gen);
+      when = ('0' + d.getDate()).slice(-2) + '.' + ('0' + (d.getMonth() + 1)).slice(-2) + '.' + d.getFullYear();
+    }
+    meta.textContent = 'Материалов: ' + cards.length + ' · данные распределения на ' + when;
+    applyFilter();
+  }
+
+  function applyFilter(){
+    var q = state.q.trim().toLowerCase();
+    var rid = state.region;
+    var shown = 0;
+    cards.forEach(function(el){
+      var okName = !q || el.dataset.name.indexOf(q) >= 0;
+      var okRegion = rid === 'all' || el.dataset.zones.split(',').indexOf(rid) >= 0;
+      var show = okName && okRegion;
+      el.style.display = show ? '' : 'none';
+      if (show) shown++;
+      // при выбранном регионе показать только его секцию внутри карточки
+      el.querySelectorAll('.vol-sec').forEach(function(s){
+        s.style.display = (rid === 'all' || s.dataset.rid === rid) ? '' : 'none';
+      });
+    });
+    if (cards.length) empty.hidden = shown > 0;
+  }
+
+  regionsBox.addEventListener('click', function(e){
+    var btn = e.target.closest('.vol-chip');
+    if (!btn) return;
+    state.region = btn.dataset.r;
+    regionsBox.querySelectorAll('.vol-chip').forEach(function(c){
+      c.classList.toggle('active', c === btn);
+    });
+    applyFilter();
+  });
+  searchEl.addEventListener('input', function(){
+    state.q = searchEl.value;
+    applyFilter();
+  });
+
+  // ---- правка / добавление / удаление объёма ----
+  grid.addEventListener('click', function(e){
+    var editBtn = e.target.closest('.vol-edit-btn');
+    if (editBtn){
+      if (state.editing){ showToast('Сначала завершите текущую правку', true); return; }
+      var line = editBtn.closest('.vol-line');
+      var card = editBtn.closest('.vol-card');
+      var rid = editBtn.dataset.r;
+      var iRaw = editBtn.dataset.i;
+      var isAddEdit = iRaw === 'add';
+      var i = isAddEdit ? 0 : parseInt(iRaw, 10);
+      var item = (state.data.items || []).find(function(x){ return x.n === card.dataset.exact; });
+      var tier = item && item.r[rid] && item.r[rid][i];
+      if (!tier){ showToast('Данные уже обновились — попробуйте ещё раз', true); return; }
+      line.dataset.n = card.dataset.exact;
+      line.dataset.r = rid;
+      line.dataset.i = iRaw;
+      if (tier.f === 1) line.dataset.stop = '1'; // уже помечен оператором
+      line.classList.add('is-editing');
+      line.classList.remove('is-add', 'is-stop');
+      var manual = tier.f === 1;
+      var cur = String(tier.v).replace(/\n/g, ' / ');
+      line.innerHTML = '<textarea class="vol-input" maxlength="800" rows="' + Math.min(8, Math.max(2, Math.ceil(cur.length / 46))) + '" aria-label="Объём (виден целиком)">' + esc(cur) + '</textarea>'
+        + (manual ? '<div class="vol-stop-preview">Товар на СТОПЕ</div>' : '')
+        + '<div class="vol-editbar">'
+        + '<button type="button" class="vol-stoptoggle' + (manual ? ' active' : '') + '">' + (manual ? 'Стоп ✓' : 'Стоп') + '</button>'
+        + '<button type="button" class="vol-save">Сохранить</button>'
+        + '<button type="button" class="vol-cancel">Отмена</button>'
+        + '</div>';
+      if (manual) line.classList.add('stop-on');
+      state.editing = true;
+      var inp = line.querySelector('.vol-input');
+      inp.focus();
+      inp.setSelectionRange(inp.value.length, inp.value.length);
+      return;
+    }
+    if (e.target.closest('.vol-cancel')){
+      state.editing = false;
+      if (state.data) render(state.data, true);
+      return;
+    }
+    // кнопка Стоп внутри редактора: строка станет красной «Товар на СТОПЕ»
+    var stBtn = e.target.closest('.vol-stoptoggle');
+    if (stBtn){
+      var edLine = stBtn.closest('.vol-line');
+      var on = !stBtn.classList.contains('active');
+      stBtn.classList.toggle('active', on);
+      stBtn.textContent = on ? 'Стоп ✓' : 'Стоп';
+      edLine.dataset.stop = on ? '1' : '0';
+      edLine.classList.toggle('stop-on', on);
+      var prev = edLine.querySelector('.vol-stop-preview');
+      if (on && !prev){ var dprev = document.createElement('div'); dprev.className = 'vol-stop-preview'; dprev.textContent = 'Товар на СТОПЕ'; edLine.insertBefore(dprev, edLine.querySelector('.vol-editbar')); }
+      else if (!on && prev) prev.remove();
+      return;
+    }
+    // ➕ добавить объём (товар появился / региона не было)
+    var addBtn = e.target.closest('.vol-add-btn');
+    if (addBtn){
+      if (state.editing){ showToast('Сначала завершите текущую правку', true); return; }
+      var secA = addBtn.closest('.vol-sec');
+      var cardA = addBtn.closest('.vol-card');
+      var ridA = addBtn.dataset.r;
+      var curLine = secA.querySelector('.vol-line');
+      var addLine;
+      if (curLine && !curLine.classList.contains('vol-empty')){
+        addLine = curLine;
+      } else {
+        addLine = document.createElement('div');
+        addLine.className = 'vol-line is-editing';
+        curLine.replaceWith(addLine);
+      }
+      addLine.dataset.n = cardA.dataset.exact;
+      addLine.dataset.r = ridA;
+      addLine.dataset.i = 'add';
+      addLine.classList.add('is-editing');
+      addLine.classList.remove('is-add', 'is-stop', 'vol-empty', 'stop-on');
+      addLine.innerHTML = '<textarea class="vol-input" maxlength="800" rows="3" placeholder="Например: от 10 шт&#10;от 5 м3 / от 1 тн" aria-label="Новый объём"></textarea>'
+        + '<div class="vol-editbar">'
+        + '<button type="button" class="vol-stoptoggle">Стоп</button>'
+        + '<button type="button" class="vol-save">Добавить</button>'
+        + '<button type="button" class="vol-cancel">Отмена</button>'
+        + '</div>';
+      state.editing = true;
+      addLine.querySelector('.vol-input').focus();
+      return;
+    }
+    // ✕ удалить добавленный объём (вернётся прежняя строка)
+    var delBtn = e.target.closest('.vol-del-btn');
+    if (delBtn){
+      if (state.editing){ showToast('Сначала завершите текущую правку', true); return; }
+      var cardD = delBtn.closest('.vol-card');
+      var nD = cardD.dataset.exact, rD = delBtn.dataset.r;
+      delBtn.disabled = true;
+      httpPost(SRC_LIVE, { n: nD, r: rD, i: 'add', mode: 'del' }, 20000, function(err, res){
+        if (err || !res || !res.ok){
+          delBtn.disabled = false;
+          showToast('Не удалось удалить — проверьте связь и попробуйте ещё раз', true);
+          return;
+        }
+        if (typeof res.rev === 'number') state.rev = res.rev;
+        // сервер отвечает быстро — убираем строку сразу на месте
+        var itD = (state.data.items || []).find(function(x){ return x.n === nD; });
+        if (itD && itD.r[rD]){
+          itD.r[rD] = itD.r[rD].filter(function(t){ return t.add !== 1; });
+          if (!itD.r[rD].length) delete itD.r[rD];
+        }
+        render(state.data, true);
+        showToast('✓ Добавленный объём удалён');
+        setTimeout(function(){ load(true); }, 600);
+      });
+      return;
+    }
+    var saveBtn = e.target.closest('.vol-save');
+    if (saveBtn){
+      var line2 = saveBtn.closest('.vol-line');
+      var v = line2.querySelector('.vol-input').value.trim();
+      var stopOn = line2.dataset.stop === '1';
+      var stopTouched = typeof line2.dataset.stop !== 'undefined';
+      if (!v && !stopOn){ showToast('Введите объём', true); return; }
+      saveBtn.disabled = true;
+      saveBtn.textContent = 'Сохраняю…';
+      var body = { n: line2.dataset.n, r: line2.dataset.r, v: v };
+      if (line2.dataset.i === 'add'){ body.i = 'add'; }
+      else { body.i = parseInt(line2.dataset.i, 10); }
+      if (stopTouched) body.stop = stopOn ? 1 : 0;
+      var payload = body;
+      httpPost(SRC_LIVE, payload, 20000, function(err, res){
+        if (err || !res || !res.ok){
+          saveBtn.disabled = false;
+          saveBtn.textContent = 'Сохранить';
+          showToast('Не удалось сохранить — проверьте связь и попробуйте ещё раз', true);
+          return;
+        }
+        if (typeof res.rev === 'number') state.rev = res.rev;
+        // мгновенно показываем правку у оператора, не дожидаясь листов
+        var nS = payload.n, rS = payload.r;
+        var itS = (state.data.items || []).find(function(x){ return x.n === nS; });
+        if (!itS){ itS = { n: nS, r: {} }; state.data.items.push(itS); }
+        var tS = itS.r[rS]; if (!tS) tS = itS.r[rS] = [];
+        if (payload.i === 'add'){
+          var nt = { v: v, s: stopOn ? 1 : 0, add: 1 };
+          if (stopOn) nt.f = 1;
+          tS.unshift(nt);
+        } else {
+          var num = payload.i;
+          var tt = tS.find(function(x){ return x.oi === num; }) || tS[num];
+          if (tt){
+            if (v) tt.v = v;
+            if (stopTouched){
+              tt.s = stopOn ? 1 : 0;
+              if (stopOn) tt.f = 1; else delete tt.f;
+            }
+          }
+        }
+        state.editing = false;
+        render(state.data, true);
+        showToast(stopOn ? '✓ Сохранено — СТОП увидят все' : '✓ Сохранено — у всех появится в течение пары секунд');
+        setTimeout(function(){ load(true); }, 600);
+      });
+    }
+  });
+
+  // загрузчик: fetch с таймаутом + запасной XHR для старых телефонов (там fetch нет).
+  // без таймаута медленная сеть висела бы вечно — а мы через N секунд переключаемся на запасной снапшот.
+  function httpGet(url, ms, cb){
+    var finished = false;
+    var to = setTimeout(function(){ if (!finished){ finished = true; cb(new Error('timeout')); } }, ms || 12000);
+    function finish(err, data, status){
+      if (finished) return;
+      finished = true;
+      clearTimeout(to);
+      cb(err, data, status);
+    }
+    if (typeof window.fetch === 'function'){
+      window.fetch(url).then(function(r){
+        if (!r.ok) { finish(new Error('http ' + r.status)); return; }
+        return r.json().then(function(d){ finish(null, d, r.status); }, function(e){ finish(e); });
+      }, function(e){ finish(e); });
+    } else {
+      try {
+        var x = new XMLHttpRequest();
+        x.open('GET', url, true);
+        x.onreadystatechange = function(){
+          if (x.readyState !== 4) return;
+          if (x.status >= 200 && x.status < 300){
+            var d;
+            try { d = JSON.parse(x.responseText); } catch (err) { finish(err); return; }
+            finish(null, d, x.status);
+          } else finish(new Error('http ' + x.status));
+        };
+        x.onerror = function(){ finish(new Error('network')); };
+        x.send();
+      } catch (err) { finish(err); }
+    }
+  }
+
+  // отправка правки: как httpGet — таймаут + XHR-фолбэк, кнопка никогда не висит вечно
+  function httpPost(url, payload, ms, cb){
+    var body = JSON.stringify(payload);
+    var finished = false;
+    var to = setTimeout(function(){ if (!finished){ finished = true; cb(new Error('timeout')); } }, ms || 20000);
+    function finish(err, data){
+      if (finished) return;
+      finished = true;
+      clearTimeout(to);
+      cb(err, data);
+    }
+    if (typeof window.fetch === 'function'){
+      window.fetch(url, { method: 'POST', headers: { 'content-type': 'application/json' }, body: body }).then(function(r){
+        if (!r.ok) { finish(new Error('http ' + r.status)); return; }
+        return r.json().then(function(d){ finish(null, d); }, finish);
+      }, function(e){ finish(e); });
+    } else {
+      try {
+        var x = new XMLHttpRequest();
+        x.open('POST', url, true);
+        x.setRequestHeader('content-type', 'application/json');
+        x.onreadystatechange = function(){
+          if (x.readyState !== 4) return;
+          if (x.status >= 200 && x.status < 300){
+            var d;
+            try { d = JSON.parse(x.responseText); } catch (err) { finish(err); return; }
+            finish(null, d);
+          } else finish(new Error('http ' + x.status));
+        };
+        x.onerror = function(){ finish(new Error('network')); };
+        x.send(body);
+      } catch (err) { finish(err); }
+    }
+  }
+
+  // последние удачные объёмы храним в браузере оператора: даже если сервер молчит,
+  // человек видит данные, а не пустоту и вечное «Загружаем объёмы…»
+  var CACHE_KEY = 'volCacheV1';
+  var lastSaved = null;
+  function readCache(){
+    try {
+      var s = window.localStorage && localStorage.getItem(CACHE_KEY);
+      if (!s) return null;
+      var d = JSON.parse(s);
+      if (d && d.items && d.items.length && d.regs) return d;
+    } catch (e) {}
+    return null;
+  }
+  function writeCache(d){
+    try {
+      var j = JSON.stringify({ rev: d.rev, gen: d.gen, regs: d.regs, items: d.items });
+      if (j === lastSaved) return;
+      localStorage.setItem(CACHE_KEY, j);
+      lastSaved = j;
+    } catch (e) {}
+  }
+  function showLoadError(){
+    meta.classList.add('is-err');
+    meta.textContent = 'Объёмы не загрузились — проверьте связь. ';
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'vol-retry';
+    btn.textContent = 'Повторить';
+    btn.onclick = function(){
+      btn.disabled = true;
+      btn.textContent = 'Загружаю…';
+      load(false);
+    };
+    meta.appendChild(btn);
+    empty.hidden = true;
+  }
+
+  function load(silent){
+    var done = function(d){ if (!state.editing) render(d); };
+    // при открытии страницы сразу показываем последние удачные объёмы из памяти браузера,
+    // а свежие подтягиваем следом — ожидания «Загружаем объёмы…» больше нет
+    if (!silent && !state.data){
+      var pre = readCache();
+      if (pre) done(pre);
+    }
+    httpGet(SRC_LIVE, 12000, function(err, d){
+      if (err || !d || d.ok !== true || !d.items){
+        // сервер не ответил — сразу показываем последние удачные объёмы из памяти браузера
+        var cached = readCache();
+        if (cached) done(cached);
+        httpGet(SRC_FALLBACK, 10000, function(err2, snap){
+          if (err2 || !snap || !snap.items){
+            if (!cached) showLoadError();
+            return;
+          }
+          if (!cached){ done(snap); return; }
+          // резервный снимок может быть новее кэша — тогда показываем его
+          var a = Date.parse(cached.gen || '') || 0;
+          var b = Date.parse(snap.gen || '') || 0;
+          if (b > a) done(snap);
+        });
+        return;
+      }
+      // устаревшая копия из CDN-кэша (старее последней правки) — не показываем, чтобы не откатывать экран
+      if (typeof d.rev === 'number' && typeof state.rev === 'number' && d.rev < state.rev) return;
+      if (typeof d.rev === 'number') state.rev = d.rev;
+      try { meta.classList.remove('is-err'); } catch (e) {}
+      writeCache(d);
+      done(d);
+    });
+  }
+
+  load(false);
+  // автообновление каждые 15 секунд: правки объёмов и таблица доезжают до всех почти мгновенно
+  // (если данные не изменились — перерисовки не будет)
+  setInterval(function(){ load(true); }, 15000);
+})();
+
+</script>
+</body>
+</html>
